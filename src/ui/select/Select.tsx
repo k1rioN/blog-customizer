@@ -26,6 +26,7 @@ export const Select = (props: SelectProps) => {
 	const rootRef = useRef<HTMLDivElement>(null);
 	const placeholderRef = useRef<HTMLDivElement>(null);
 	const optionClassName = selected?.optionClassName ?? '';
+	const status = 'default';
 
 	useOutsideClickClose({
 		isOpen,
