@@ -1,9 +1,11 @@
 .container {
 	position: fixed;
+	top: 0;
 	left: 0;
+	z-index: 10;
 	width: 616px;
 	height: 100%;
-	overflow: scroll;
+	overflow-y: auto;
 	transform: translate(-616px);
 	transition: transform 0.5s ease;
 }
@@ -18,15 +20,27 @@
 	flex-direction: column;
 	box-sizing: border-box;
 	width: 616px;
-	height: auto;
 	min-height: 100%;
 	padding: 50px 31px;
 	background-color: #ffffff;
 	border-right: 1px solid #000000;
 }
 
+.content {
+	display: flex;
+	flex-direction: column;
+	row-gap: 50px;
+}
+
+.fields {
+	display: flex;
+	flex-direction: column;
+	row-gap: 24px;
+}
+
 .bottomContainer {
 	display: flex;
 	justify-content: space-between;
 	margin-top: auto;
+	padding-top: 40px;
 }
